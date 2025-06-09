@@ -2,8 +2,13 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Optional: make body take full viewport height */
+  height: 100vh; /* Optional: full viewport height */
   margin: 0; /* Reset default margin */
+
+  /* Added styling */
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark gray text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Make <main> a flex container with row layout */
@@ -11,29 +16,69 @@ main {
   display: flex;
   flex-direction: row;
   flex: auto; /* Automatic height and width */
-  min-height: 0; /* Important to allow children to shrink and scroll */
+  min-height: 0; /* Allow children to shrink and scroll */
 }
 
 /* Article takes 2/3 of the width */
 article {
   flex: 2;
   overflow-y: auto;
-  padding: 1em; /* Optional for readability */
-  border: 1px solid #ccc; /* Optional, for visual distinction */
+  padding: 1.5em; /* Increased padding for readability */
+
+  /* Styling */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  line-height: 1.6;
+  border: 1px solid #ccc; /* Optional visual distinction */
 }
 
 /* Aside takes 1/3 of the width */
 aside {
   flex: 1;
   overflow-y: auto;
-  padding: 1em; /* Optional */
-  border: 1px solid #ccc; /* Optional */
+  padding: 1em;
+
+  /* Styling */
+  background-color: #e6f0ff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
-/* Header and footer will naturally take full width */
-/* You can add some padding or styles here as needed */
-
-header, footer {
+/* Style header */
+header {
   padding: 1em;
   border: 1px solid #ccc; /* Optional */
+
+  /* Added styling */
+  background-color: #004080; /* Navy */
+  color: white;
+}
+
+/* Style header ul */
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style logo */
+.logo {
+  font-size: 2em;
+  color: #ffd700; /* Gold */
+}
+
+/* Style footer */
+footer {
+  padding: 1em;
+  border: 1px solid #ccc; /* Optional */
+
+  /* Added styling */
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
 }
