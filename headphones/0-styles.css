@@ -1,0 +1,83 @@
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+ul{
+  display: flex;
+  gap: 20px;
+}
+
+
+li a{
+  color: white;
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url(image/headphones_hero1.jpg);
+  background-size: cover; /* Cover the whole screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-attachment: fixed; /* Optional: Makes background stay fixed when scrolling */
+}
+
+
+div h1{
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  color: white;
+  
+}
+
+p{
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: white;
+  
+}
+
+ 
+
+
+  button {
+  display: block;
+  margin: 0 auto;  /* Center horizontally */
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f71d15;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  margin-bottom: 60px;
+}
+  
+  
+
+
+button:hover{
+  transform: scale(1.05);
+  background-color: green;
+}
+
+
+span{
+  color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  display: block; /* Makes the span act like a paragraph */
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
